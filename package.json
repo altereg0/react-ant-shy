@@ -4,12 +4,25 @@
   "description": "A set of light React components 🐜",
   "main": "index.js",
   "scripts": {
-    "eslint": "./node_modules/.bin/eslint \"src/**/*.ts\"",
-    "format": "prettier-eslint \"src/**/*.ts\" --write"
+    "eslint": "./node_modules/.bin/eslint '**/*.{js,ts,tsx}'",
+    "eslint:fix": "npm run eslint -- --fix",
+    "format": "prettier-eslint '**/*.{js,ts,tsx}' --write"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Alexandrshy/react-ant.git"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.(js|jsx|ts|tsx)": [
+      "npm run eslint:fix",
+      "npm run format",
+      "git add"
+    ]
   },
   "keywords": [
     "react",
@@ -35,6 +48,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
     "prettier-eslint": "^9.0.0",
     "prettier-eslint-cli": "^5.0.0"
   }
