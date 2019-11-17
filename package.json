@@ -1,16 +1,16 @@
 {
-  "name": "react-ant",
+  "name": "react-ant-shy",
   "version": "1.0.0",
   "description": "A set of light React components 🐜",
   "main": "index.js",
   "scripts": {
-    "eslint": "./node_modules/.bin/eslint '**/*.{js,ts,tsx}'",
+    "eslint": "eslint '**/*.{js,ts,tsx}'",
     "eslint:fix": "npm run eslint -- --fix",
     "format": "prettier-eslint '**/*.{js,ts,tsx}' --write"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alexandrshy/react-ant.git"
+    "url": "git+https://github.com/altereg0/react-ant-shy.git"
   },
   "husky": {
     "hooks": {
@@ -29,16 +29,12 @@
     "css",
     "UI"
   ],
-  "author": {
-    "name": "Alex",
-    "email": "alexandrshy@gmail.com",
-    "url": "https://github.com/Alexandrshy"
-  },
+  "author": "Alter <a@example.com> (https://github.com/altereg0)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Alexandrshy/react-ant/issues"
+    "url": "https://github.com/altereg0/react-ant-shy/issues"
   },
-  "homepage": "https://github.com/Alexandrshy/react-ant#readme",
+  "homepage": "https://github.com/altereg0/react-ant-shy#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.6.1",
     "@typescript-eslint/parser": "^2.6.1",
